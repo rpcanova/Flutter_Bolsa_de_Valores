@@ -45,7 +45,11 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Color(0xff0B0B45),
       appBar: AppBar(
-        title: Text("Bolsa de Valores no Mundo"),
+        title: Text("Bolsa de Valores no Mundo",
+        style: TextStyle(
+          color: Colors.white
+          ),
+        ),
         backgroundColor: Color(0xff0B0B45),
         centerTitle: true,
       ),
@@ -151,16 +155,20 @@ class _HomeState extends State<Home> {
                         construirTexto(ibovespaLocal!),
                         construirTexto(ibovespaPontos!),
                         construirTexto(ibovespaVariacao!),
+
                         const SizedBox(height: 40),
                         construirTexto(nasdaqNome!),
                         construirTexto(nasdaqLocal!),
                         construirTexto(nasdaqPontos!),
                         construirTexto(nasdaqVariacao!),
+
                         const SizedBox(height: 40),
                         construirTexto(nikkeiNome!),
                         construirTexto(nikkeiLocal!),
                         construirTexto(nikkeiVariacao!),
+
                         const SizedBox(height: 40),
+
                         construirTexto(cacNome!),
                         construirTexto(cacLocal!),
                         construirTexto(cacVariacao!),
